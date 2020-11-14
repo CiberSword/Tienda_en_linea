@@ -6,11 +6,17 @@ import com.poo.practica6.supermercado.departamentos.electronica.*;
 public class PruebaProductos{
 
     public static void main(String [] args){
-        Productos producto = new Samsung("Azul");
-        Productos producto2 = new IPhone("Rosa");
+        Productos cel1 = new Samsung("Azul");
+        Productos cel2 = new IPhone("Rosa");
+        Productos cel3 = new Huawei("Blanco");
 
-        System.out.println(producto.getMarca());
-        System.out.println(producto2.getMarca());
+        System.out.println("Celular" + cel1.getMarca());
+        System.out.println("Celular" + cel2.getMarca());
+        System.out.println("Celular" + cel3.getMarca());
+
+        Productos elec1 = new Lavadora();
+
+        System.out.println("Lavadora" + elec1.getMarca());
     }
 }
 
