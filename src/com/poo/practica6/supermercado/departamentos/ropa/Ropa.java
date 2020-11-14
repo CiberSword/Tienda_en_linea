@@ -1,6 +1,6 @@
 package com.poo.practica6.supermercado.departamentos.ropa;
 
-import supermercado.departamentos.Productos;
+import com.poo.practica6.supermercado.departamentos.Productos;
 
 public abstract class Ropa extends Productos {
     private String tamano;
