@@ -1,13 +1,19 @@
 package com.poo.practica6.supermercado.departamentos.viveres;
 
-public abstract class Frutas extends Viveres{
+/**
+ * Clase abstracta que modela las caracteristicas generales de la fruta, de esta se derivan frutas más especificas
+ */
+public abstract class Frutas extends Viveres {
     private float pesoKG;
 
-    public void setPeso(float pesoKG){
+    /**
+     * Getters y Setters
+     */
+    public void setPeso(float pesoKG) {
         this.pesoKG = pesoKG;
     }
 
-    public float getPeso(){
+    public float getPeso() {
         return pesoKG;
     }
 }

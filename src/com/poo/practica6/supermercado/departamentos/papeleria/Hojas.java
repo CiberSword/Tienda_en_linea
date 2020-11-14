@@ -2,10 +2,12 @@ package com.poo.practica6.supermercado.departamentos.papeleria;
 
 import com.poo.practica6.supermercado.departamentos.Productos;
 
+/** Clase hojas que hereda de la clase Productos */
 public class Hojas extends Productos{
     private int numeroHojas;
     private float porcentajeBlancura;
 
+    /** Constructor preestablecido de la clase Hojas*/
     public Hojas(){
         setPrecio((float) 113.00);
         setCodigoIdentificacion("HX99PB");
@@ -14,6 +16,9 @@ public class Hojas extends Productos{
         setPorcentajeBlancura((float)99.9);
     }
 
+    /**
+     * Getters y Setters
+     */
     public void setnumeroHojas(int numeroHojas){
         this.numeroHojas = numeroHojas;
     }

@@ -1,12 +1,18 @@
 package com.poo.practica6.supermercado.departamentos.zapatos;
 
-public class Tacones extends Calzado{
+public class Tacones extends Calzado {
     private int tamanoTacon;
 
-    public Tacones(){
+    /**
+     * Constructor preestablecido
+     */
+    public Tacones() {
         setPrecio((float) 300.00);
     }
 
+    /**
+     * Getters y Setters
+     */
     public int getTamanoTacon() {
         return tamanoTacon;
     }

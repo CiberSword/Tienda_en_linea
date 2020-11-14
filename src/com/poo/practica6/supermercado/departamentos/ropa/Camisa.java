@@ -5,6 +5,7 @@ public class Camisa extends Ropa {
     private String diseno;
     private String tipocuello;
 
+    /** Constructor completo */
     public Camisa(String tamano, String color, String genero, String material, int numBotones, String diseno, String tipocuello) {
         super(tamano, color, genero, material);
         this.numBotones = numBotones;

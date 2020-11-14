@@ -1,13 +1,19 @@
 package com.poo.practica6.supermercado.departamentos.zapatos;
 
-public class Tenis extends Calzado{
+public class Tenis extends Calzado {
     private boolean agujetas;
 
-    public Tenis(){
+    /**
+     * Constructor preeestablecido
+     */
+    public Tenis() {
         setPrecio((float) 300.00);
     }
 
-    public boolean isAgujetas() {
+    /**
+     * Getters y Setters
+     */
+    public boolean getAgujetas() {
         return agujetas;
     }
 

@@ -1,7 +1,11 @@
 package com.poo.practica6.supermercado.departamentos.viveres;
 
-public class Platanos extends Frutas{
-    public Platanos(){
+public class Platanos extends Frutas {
+
+    /**
+     * Constructor preestablecido
+     */
+    public Platanos() {
         setPrecio((float) 16.90);
         setCodigoIdentificacion("PDC1KG");
         setMarca("de Chiapas");

@@ -1,9 +1,12 @@
 package com.poo.practica6.supermercado.departamentos.viveres;
 
-public class Manzanas extends Frutas{
+public class Manzanas extends Frutas {
     private String color;
 
-    public Manzanas(){
+    /**
+     * Constructor preestablecido
+     */
+    public Manzanas() {
         setPrecio((float) 29.90);
         setCodigoIdentificacion("MG1KG");
         setMarca("GOLDEN");
@@ -12,11 +15,14 @@ public class Manzanas extends Frutas{
         setFechaCaducidad("30/NOV/2020");
     }
 
-    public void setColor(String color){
+    /**
+     * Getters y Setters
+     */
+    public void setColor(String color) {
         this.color = color;
     }
 
-    public String getColor(){
+    public String getColor() {
         return color;
     }
 }

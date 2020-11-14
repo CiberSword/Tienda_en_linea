@@ -1,31 +1,36 @@
 package com.poo.practica6.supermercado.departamentos.viveres;
 
-public class Cereal extends Viveres{
+public class Cereal extends Viveres {
     private float contenidoNeto;
     private float calorias;
 
-    public Cereal(){
+    /**
+     * Constructor preestablecido
+     */
+    public Cereal() {
         setPrecio((float) 40.10);
         setCodigoIdentificacion("CKCF300");
         setMarca("Kellogs");
         setFechaCaducidad("31/Dic/2020");
         setContenidoNeto(300);
-        setCalorias((float)1080.00);
+        setCalorias((float) 1080.00);
     }
-
-    public void setContenidoNeto(float contenidoNeto){
+    /**
+     * Getters y Setters
+     */
+    public void setContenidoNeto(float contenidoNeto) {
         this.contenidoNeto = contenidoNeto;
     }
 
-    public float getContenidoNeto(){
+    public float getContenidoNeto() {
         return contenidoNeto;
     }
 
-    public void setCalorias(float calorias){
+    public void setCalorias(float calorias) {
         this.calorias = calorias;
     }
 
-    public float getCalorias(){
+    public float getCalorias() {
         return calorias;
     }
 }

@@ -1,15 +1,18 @@
 package com.poo.practica6.supermercado.departamentos.zapatos;
 
-public class Sandalias extends Calzado{
+public class Sandalias extends Calzado {
     private String tipoSandalia;
 
-    public Sandalias(){
+    public Sandalias() {
         setPrecio((float) 100.00);
     }
 
+    /**
+     * Getters y Setters
+     */
     public String getTipoSandalia() {
-            return tipoSandalia;
-        }
+        return tipoSandalia;
+    }
 
     public void setTipoSandalia(String tipoSandalia) {
         this.tipoSandalia = tipoSandalia;

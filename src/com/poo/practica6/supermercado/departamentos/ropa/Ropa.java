@@ -2,12 +2,19 @@ package com.poo.practica6.supermercado.departamentos.ropa;
 
 import com.poo.practica6.supermercado.departamentos.Productos;
 
+/**
+ * La clase Ropa es una clase abstracta ya que no se puede tener un objeto tipo ropa, sin embargo, a partir de esta se
+ * derivan clases hijas que tienen en común todos los elementos de la ropa
+ */
 public abstract class Ropa extends Productos {
     private String tamano;
     private String color;
     private String genero;
     private String material;
 
+    /**
+     * Constructor a heredar
+     */
     public Ropa(String tamano, String color, String genero, String material) {
         this.tamano = tamano;
         this.color = color;
@@ -15,6 +22,9 @@ public abstract class Ropa extends Productos {
         this.material = material;
     }
 
+    /**
+     * Getters y Setters
+     */
     public String getTamano() {
         return tamano;
     }
