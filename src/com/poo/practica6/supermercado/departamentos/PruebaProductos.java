@@ -3,6 +3,7 @@ package com.poo.practica6.supermercado.departamentos;
 import com.poo.practica6.supermercado.departamentos.*;
 import com.poo.practica6.supermercado.departamentos.electronica.*;
 import com.poo.practica6.supermercado.departamentos.papeleria.*;
+import com.poo.practica6.supermercado.departamentos.viveres.*;
 
 public class PruebaProductos{
 
@@ -26,6 +27,14 @@ public class PruebaProductos{
 
         System.out.println("Cuadernos " + pap1.getMarca());
         System.out.println("Hojas Blancas " + pap2.getMarca());
+
+        Productos vive1 = new Manzanas();
+        Productos vive2 = new Platanos();
+        Productos vive3 = new Cereal();
+
+        System.out.println("1 KG de manzanas " + vive1.getMarca());
+        System.out.println("1 KG de platanos " + vive2.getMarca());
+        System.out.println("Cereal Corn Flakes " + vive3.getMarca());
     }
 }
 
