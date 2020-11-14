@@ -11,6 +11,8 @@ public abstract class Productos {
     private String codigoIdentificacion;
     public String marca;
 
+    /**Declaracion de los metodos getters y setters para la manipulacion de atributos*/
+
     public void setPrecio(float precio){
         this.precio = precio;
     }
