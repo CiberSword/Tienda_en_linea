@@ -2,6 +2,7 @@ package com.poo.practica6.usuarios;
 import com.poo.practica6.supermercado.departamentos.electronica.*;
 import com.poo.practica6.supermercado.departamentos.papeleria.*;
 import com.poo.practica6.supermercado.departamentos.viveres.*;
+import com.poo.practica6.supermercado.departamentos.ropa.*;
 
 import java.util.ArrayList;
 import java.util.List;

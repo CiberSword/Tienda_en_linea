@@ -8,7 +8,7 @@ public class EnTienda {
 
     /** Método Constructor */
     public EnTienda(long CantidadDePoductos) {
-        this.cantidadBolsas = Math.round(CantidadDePoductos/6);
+        this.cantidadBolsas = Math.round(CantidadDePoductos/3);
     }
 
     /** Método Imprimir Recibo */

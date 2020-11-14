@@ -41,43 +41,7 @@ public abstract class Calzado extends Productos {
     }
 }
 
-class Sandalias extends Calzado {
 
-    public Sandalias(){
 
-    }
 
-    private String tipoSandalia;
 
-    public String getTipoSandalia() {
-        return tipoSandalia;
-    }
-
-    public void setTipoSandalia(String tipoSandalia) {
-        this.tipoSandalia = tipoSandalia;
-    }
-}
-
-class Tenis extends Calzado {
-    private boolean agujetas;
-
-    public boolean isAgujetas() {
-        return agujetas;
-    }
-
-    public void setAgujetas(boolean agujetas) {
-        this.agujetas = agujetas;
-    }
-}
-
-class Tacones extends Calzado {
-    private int tamanoTacon;
-
-    public int getTamanoTacon() {
-        return tamanoTacon;
-    }
-
-    public void setTamanoTacon(int tamanoTacon) {
-        this.tamanoTacon = tamanoTacon;
-    }
-}
