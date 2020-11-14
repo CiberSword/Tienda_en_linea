@@ -3,6 +3,7 @@ import com.poo.practica6.supermercado.departamentos.electronica.*;
 import com.poo.practica6.supermercado.departamentos.papeleria.*;
 import com.poo.practica6.supermercado.departamentos.viveres.*;
 import com.poo.practica6.supermercado.departamentos.ropa.*;
+import com.poo.practica6.supermercado.departamentos.zapatos.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +41,7 @@ public class UsuarioNormal {
         precios.add(platanos.getPrecio());
         carrito.add("Platanos");
         System.out.println("  Platanos "+platanos.getMarca()+" $"+platanos.getPrecio()+" agregado al carrito");
+
         System.out.println("Pasillo: Papeleria");
         Cuadernos cuadernos = new Cuadernos();
         precios.add(cuadernos.getPrecio());
@@ -49,6 +51,7 @@ public class UsuarioNormal {
         precios.add(hojas.getPrecio());
         carrito.add("Hojas");
         System.out.println("  Hojas "+hojas.getMarca()+" $"+hojas.getPrecio()+" agregado al carrito");
+
         System.out.println("Pasillo: Electronicos");
         Lavadora lavadora = new Lavadora();
         precios.add(lavadora.getPrecio());
@@ -62,14 +65,34 @@ public class UsuarioNormal {
         precios.add(iPhone.getPrecio());
         carrito.add("IPhone");
         System.out.println("  Celular "+iPhone.getMarca()+" $"+iPhone.getPrecio()+" agregado al carrito");
+
         System.out.println("Pasillo: Ropa");
-        //carrito.add(get.Producto());
-        //precios.add(get.Precio());
-        //System.out.println(get.Producto()+"Agregado al carrito");
+        Calcetines calcetines = new Calcetines("Mediano","Gris","Unisex","Algodon","Patos");
+        precios.add(calcetines.getPrecio());
+        carrito.add("Calcetines");
+        System.out.println("  Calcetines $"+calcetines.getPrecio()+" agregado al carrito");
+        Camisa camisa = new Camisa("Mediano","Azul","Masculino","Algodon",8,"Liso","Redondo");
+        precios.add(camisa.getPrecio());
+        carrito.add("Camisa");
+        System.out.println("  Camisa $"+camisa.getPrecio()+" agregado al carrito");
+        Pantalon pantalon = new Pantalon("Mediano","Azul","Masculino","Algodon","Recto",4);
+        precios.add(pantalon.getPrecio());
+        carrito.add("Pantalon");
+        System.out.println("  Pantalon $"+pantalon.getPrecio()+" agregado al carrito");
+
         System.out.println("Pasillo: Zapatos");
-        //carrito.add(get.Producto());
-        //precios.add(get.Precio());
-        //System.out.println(get.Producto()+"Agregado al carrito");
+        Sandalias sandalias = new Sandalias();
+        precios.add(sandalias.getPrecio());
+        carrito.add("Sandalias");
+        System.out.println("  Sandalias $"+sandalias.getPrecio()+" agregado al carrito");
+        Tacones tacones = new Tacones();
+        precios.add(tacones.getPrecio());
+        carrito.add("Tacones");
+        System.out.println("  Tacones $"+tacones.getPrecio()+" agregado al carrito");
+        Tenis tenis = new Tenis();
+        precios.add(tenis.getPrecio());
+        carrito.add("Tenis");
+        System.out.println("  Tenis $"+tenis.getPrecio()+" agregado al carrito");
     }
 
     /** Método Pagar */

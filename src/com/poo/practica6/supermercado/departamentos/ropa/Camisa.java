@@ -10,7 +10,7 @@ public class Camisa extends Ropa {
         this.numBotones = numBotones;
         this.diseno = diseno;
         this.tipocuello = tipocuello;
-        setPrecio((float) 150.00);
+        setPrecio((float) 200.00);
     }
 
     public int getNumBotones() {

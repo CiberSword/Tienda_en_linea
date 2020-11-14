@@ -6,6 +6,7 @@ public class Calcetines extends Ropa {
     public Calcetines(String tamano, String color, String genero, String material, String dibujo) {
         super(tamano, color, genero, material);
         this.dibujo = dibujo;
+        setPrecio((float) 150.00);
     }
 
     public String getDibujo() {

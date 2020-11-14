@@ -8,6 +8,7 @@ public class Pantalon extends Ropa {
         super(tamano, color, genero, material);
         this.tipo = tipo;
         this.numBolsillos = numBolsillos;
+        setPrecio((float) 400.00);
     }
 
     public String getTipo() {
