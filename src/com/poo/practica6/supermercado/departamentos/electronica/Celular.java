@@ -2,6 +2,10 @@ package com.poo.practica6.supermercado.departamentos.electronica;
 
 import com.poo.practica6.supermercado.departamentos.Productos;
 
+/** La clase Celular, al ser un producto de venta en la tienda, debe heredar los métodos y atributos
+ * de los Productos. Cada celular cuenta con las características esceciales que cualquier comprador
+ * desea conocer al momento de comprar un celular
+ */
 public abstract class Celular extends Productos {
     private String modelo;
     private int camPixeles;
@@ -13,6 +17,9 @@ public abstract class Celular extends Productos {
     private String SO;
     private boolean lectorHuella;
     private float bateria;
+
+    /**Métodos getters y setters para poder acceder a cada atributo de la clase
+     */
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
