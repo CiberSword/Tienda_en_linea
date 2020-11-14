@@ -1,6 +1,6 @@
 package com.poo.practica6.supermercado.departamentos.zapatos;
 
-import supermercado.departamentos.Productos;
+import com.poo.practica6.supermercado.departamentos.Productos;
 
 public abstract class Calzado extends Productos {
     private int tamano;

@@ -1,6 +1,6 @@
 package com.poo.practica6.supermercado.departamentos.electronica;
 
-//import supermercado.departamentos.Productos;
+import com.poo.practica6.supermercado.departamentos.Productos;
 
 public abstract class Celular extends Productos {
     private int modelo;

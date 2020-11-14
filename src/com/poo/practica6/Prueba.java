@@ -1,7 +1,7 @@
 package com.poo.practica6;
 
-import usuarios.*;
-import formasDeEntrega.*;
+import com.poo.practica6.usuarios.*;
+import com.poo.practica6.formas_de_entrega.*;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class Prueba {
         UsuarioNormal usuario = new UsuarioNormal();
 
 
-        /** Simulaci�n */
+        /** Simulación */
         usuario.RecorrerSupermercado();
 
         //Para entrar a la simulacion - se debe borrar despues de implementar productos
@@ -22,7 +22,7 @@ public class Prueba {
         if (usuario.Pagar(CantidadAPagar) == true ) {
             admin.RecibirPago(usuario.getMetodoDePago(),CantidadAPagar);
 
-            /** Elegir M�todo de Entrega */
+            /** Elegir Método de Entrega */
             int Opcion;
             do{
                 System.out.println("�Cu�l m�todo de entrega desea ocupar?");
