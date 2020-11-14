@@ -8,22 +8,20 @@ public class MetodoDePago {
     private int cvv;
     private float dinero;
 
-    /**
-     * Metodo Constructor
-     */
+    /** Método Constructor */
     public MetodoDePago() {
         Scanner teclado = new Scanner(System.in);
-        System.out.print("M�todo de Pago\n   N�mero tarjeta: ");
+        System.out.print("Método de Pago\n   Número tarjeta: ");
         this.tarjeta = teclado.nextLong();
         System.out.print("   CVV: ");
         this.cvv = teclado.nextInt();
 
-        this.dinero = 1000;
+        this.dinero = 100000;
     }
 
     /** Método Impresién Datos */
     public String ImprimirMetodoDePago() {
-        String Impresion = "M�todo de pago\n   Tarjeta: " + this.getTarjeta() + "\n   CCV: " + this.getCVV();
+        String Impresion = "Método de pago\n   Tarjeta: " + this.getTarjeta() + "\n   CCV: " + this.getCVV();
         return Impresion;
     }
 

@@ -20,7 +20,7 @@ public class Administradores {
         float DineroTotal = metodoDePago.getDinero();
         float DineroRestante = DineroTotal - CantidadAPagar;
         metodoDePago.setDinero(DineroRestante);
-        System.out.println("Transacci�n existoso, dinero restante: " + metodoDePago.getDinero());
+        System.out.println("Transacción existoso, dinero restante: " + metodoDePago.getDinero());
     }
 
     /** Método Emitir Recibo */
