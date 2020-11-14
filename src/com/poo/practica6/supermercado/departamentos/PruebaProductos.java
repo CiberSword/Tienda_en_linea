@@ -15,8 +15,10 @@ public class PruebaProductos{
         System.out.println("Celular" + cel3.getMarca());
 
         Productos elec1 = new Lavadora();
+        Productos elec2 = new Refrigerador();
 
         System.out.println("Lavadora" + elec1.getMarca());
+        System.out.println("Refrigerador" +  elec2.getMarca());
     }
 }
 
