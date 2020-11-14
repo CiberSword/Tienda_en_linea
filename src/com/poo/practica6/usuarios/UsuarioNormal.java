@@ -1,7 +1,7 @@
 package com.poo.practica6.usuarios;
 import com.poo.practica6.supermercado.departamentos.electronica.*;
 import com.poo.practica6.supermercado.departamentos.papeleria.*;
-import com.poo.practica6.supermercado.departamentos.ropa.*;
+import com.poo.practica6.supermercado.departamentos.viveres.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,9 +27,18 @@ public class UsuarioNormal {
     /** Método Recorrer Supermercado */
     public void RecorrerSupermercado() {
         System.out.println("Pasillo: Viveres");
-        //carrito.add(get.Producto());
-        //precios.add(get.Precio());
-        //System.out.println(get.Producto()+"Agregado al carrito");
+        Cereal cereal = new Cereal();
+        precios.add(cereal.getPrecio());
+        carrito.add("Cereal");
+        System.out.println("  Cereal "+cereal.getMarca()+" $"+cereal.getPrecio()+" agregado al carrito");
+        Manzanas manzanas = new Manzanas();
+        precios.add(manzanas.getPrecio());
+        carrito.add("Manzanas");
+        System.out.println("  Manzanas "+manzanas.getMarca()+" $"+manzanas.getPrecio()+" agregado al carrito");
+        Platanos platanos = new Platanos();
+        precios.add(platanos.getPrecio());
+        carrito.add("Platanos");
+        System.out.println("  Platanos "+platanos.getMarca()+" $"+platanos.getPrecio()+" agregado al carrito");
         System.out.println("Pasillo: Papeleria");
         Cuadernos cuadernos = new Cuadernos();
         precios.add(cuadernos.getPrecio());
