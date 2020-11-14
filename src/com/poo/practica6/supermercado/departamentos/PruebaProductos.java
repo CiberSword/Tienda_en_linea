@@ -22,6 +22,10 @@ public class PruebaProductos{
         System.out.println("Refrigerador " +  elec2.getMarca());
 
         Productos pap1 = new Cuadernos();
+        Productos pap2 = new Hojas();
+
+        System.out.println("Cuadernos " + pap1.getMarca());
+        System.out.println("Hojas Blancas " + pap2.getMarca());
     }
 }
 
