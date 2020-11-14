@@ -1,4 +1,5 @@
 package com.poo.practica6.usuarios;
+import com.poo.practica6.supermercado.departamentos.electronica.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,9 +33,10 @@ public class UsuarioNormal {
         //precios.add(get.Precio());
         //System.out.println(get.Producto()+"Agregado al carrito");
         System.out.println("Pasillo: Electronicos");
-        //carrito.add(get.Producto());
-        //precios.add(get.Precio());
-        //System.out.println(get.Producto()+"Agregado al carrito");
+        Lavadora lavadora = new Lavadora();
+        precios.add(lavadora.getPrecio());
+        carrito.add("Lavadora");
+        System.out.println("  Lavadora "+lavadora.getMarca()+" $"+lavadora.getPrecio()+" agregado al carrito");
         System.out.println("Pasillo: Ropa");
         //carrito.add(get.Producto());
         //precios.add(get.Precio());

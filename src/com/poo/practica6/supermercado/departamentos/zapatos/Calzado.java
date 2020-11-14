@@ -42,6 +42,11 @@ public abstract class Calzado extends Productos {
 }
 
 class Sandalias extends Calzado {
+
+    public Sandalias(){
+
+    }
+
     private String tipoSandalia;
 
     public String getTipoSandalia() {
