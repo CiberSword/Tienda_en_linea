@@ -15,7 +15,7 @@ public class EnTienda {
     public void ImprimirRecibo(String nombre,List<String> productos,List<Float> precios,float CantidadAPagar) {
         System.out.println("Atendido por: "+nombre+"\nProductos comprados:");
         for (int i = 0; i < productos.size(); i++)
-            System.out.println("  "+productos.get(i)+"------->"+precios.get(i));
+            System.out.println("  "+productos.get(i)+" -------> "+precios.get(i));
         System.out.println("Total: "+CantidadAPagar);
     }
 

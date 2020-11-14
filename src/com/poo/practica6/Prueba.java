@@ -15,10 +15,8 @@ public class Prueba {
         /** Simulación */
         usuario.RecorrerSupermercado();
 
-        //Para entrar a la simulacion - se debe borrar despues de implementar productos
-        float CantidadAPagar = 1000;
+        float CantidadAPagar = admin.EmitirRecibo(usuario.getPrecios());
 
-        //float CantidadAPagar = admin.EmitirRecibo(usuario.getPrecios());	//This is el bueno :D
         if (usuario.Pagar(CantidadAPagar) == true ) {
             admin.RecibirPago(usuario.getMetodoDePago(),CantidadAPagar);
 
