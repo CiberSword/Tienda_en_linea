@@ -5,17 +5,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class UsuarioNormal {
-    /**
-     * Atributos
-     */
+    /** Atributos */
     public String nombre;
     private MetodoDePago metodoDePago;
     private List<String> carrito;
     private List<Float> precios;
 
-    /**
-     * M�todo Constructor
-     */
+    /** Método Constructor */
     public UsuarioNormal() {
         Scanner teclado = new Scanner(System.in);
         System.out.print("Nuevo Usuario\nIngrese Nombre Completo: ");
@@ -25,9 +21,7 @@ public class UsuarioNormal {
         this.precios = new ArrayList<Float>();
     }
 
-    /**
-     * Metodo Recorrer Supermercado
-     */
+    /** Método Recorrer Supermercado */
     public void RecorrerSupermercado() {
         System.out.println("Pasillo: Viveres");
         //carrito.add(get.Producto());
@@ -51,9 +45,7 @@ public class UsuarioNormal {
         //System.out.println(get.Producto()+"Agregado al carrito");
     }
 
-    /**
-     * Metodo Pagar
-     */
+    /** Método Pagar */
     public boolean Pagar(float CantidadAPagar) {
         if (CantidadAPagar > 0) {
             System.out.println("Pagando " + CantidadAPagar + " por " + carrito.size() + " productos");
@@ -67,26 +59,20 @@ public class UsuarioNormal {
             return false;
     }
 
-    /**
-     * Metodo Impresi�n Elementos En Carrito
-     */
+    /** Método Impresión Elementos En Carrito */
     public void ImprimirElementosCarrito() {
         for (int i = 0; i < carrito.size(); i++)
             System.out.println(carrito.get(i));
     }
 
-    /**
-     * Metodo Impresi�n de Datos
-     */
+    /** Método Impresión de Datos */
     public String ImprimirDatos() {
         MetodoDePago imprimirMetodo = this.getMetodoDePago();
         String Impresion = "Usuario: " + this.nombre + "\n" + imprimirMetodo.ImprimirMetodoDePago();
         return Impresion;
     }
 
-    /**
-     * Getters
-     */
+    /** Getters */
     public MetodoDePago getMetodoDePago() {
         return metodoDePago;
     }

@@ -3,9 +3,7 @@ package com.poo.practica6.usuarios;
 import java.util.Scanner;
 
 public class MetodoDePago {
-    /**
-     * Atributos
-     */
+    /** Atributos */
     private long tarjeta;
     private int cvv;
     private float dinero;
@@ -23,17 +21,13 @@ public class MetodoDePago {
         this.dinero = 1000;
     }
 
-    /**
-     * Metodo Impresion Datos
-     */
+    /** Método Impresién Datos */
     public String ImprimirMetodoDePago() {
         String Impresion = "M�todo de pago\n   Tarjeta: " + this.getTarjeta() + "\n   CCV: " + this.getCVV();
         return Impresion;
     }
 
-    /**
-     * Getters
-     */
+    /** Getters */
     public long getTarjeta() {
         return tarjeta;
     }
@@ -46,9 +40,7 @@ public class MetodoDePago {
         return dinero;
     }
 
-    /**
-     * Setters
-     */
+    /**  Setters */
     public void setDinero(float Cantidad) {
         this.dinero = Cantidad;
     }

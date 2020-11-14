@@ -25,7 +25,7 @@ public class Prueba {
             /** Elegir Método de Entrega */
             int Opcion;
             do{
-                System.out.println("�Cu�l m�todo de entrega desea ocupar?");
+                System.out.println("¿Cuál método de entrega desea ocupar?");
                 System.out.print("1)En tienda \n2)A domicilio \nOpcion: ");
                 Scanner teclado = new Scanner(System.in);
                 Opcion = teclado.nextInt();

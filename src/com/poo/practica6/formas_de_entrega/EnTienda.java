@@ -6,12 +6,12 @@ public class EnTienda {
     /** Atributos */
     public long cantidadBolsas;
 
-    /** Metodo Constructor */
+    /** Método Constructor */
     public EnTienda(long CantidadDePoductos) {
         this.cantidadBolsas = Math.round(CantidadDePoductos/6);
     }
 
-    /** Metodo Imprimir Recibo */
+    /** Método Imprimir Recibo */
     public void ImprimirRecibo(String nombre,List<String> productos,List<Float> precios,float CantidadAPagar) {
         System.out.println("Atendido por: "+nombre+"\nProductos comprados:");
         for (int i = 0; i < productos.size(); i++)
@@ -19,7 +19,7 @@ public class EnTienda {
         System.out.println("Total: "+CantidadAPagar);
     }
 
-    /** Metodo Empaquetar */
+    /** Método Empaquetar */
     public void Empaquetar() {
         for (int i = 0; i <= cantidadBolsas; i++) {
             System.out.println("Empaquetando...");
