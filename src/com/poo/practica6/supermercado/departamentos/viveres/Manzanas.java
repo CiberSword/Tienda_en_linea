@@ -7,7 +7,9 @@ public class Manzanas extends Frutas{
         setPrecio((float) 29.90);
         setCodigoIdentificacion("MG1KG");
         setMarca("GOLDEN");
+        setPeso(1);
         setColor("Verdes");
+        setFechaCaducidad("30/NOV/2020");
     }
 
     public void setColor(String color){
