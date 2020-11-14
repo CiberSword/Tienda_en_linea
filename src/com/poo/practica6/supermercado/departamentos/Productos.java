@@ -5,9 +5,27 @@ public abstract class Productos {
     private String codigoIdentificacion;
     public String marca;
 
-    abstract void setPrecio();
+    public void setPrecio(float precio){
+        this.precio = precio;
+    }
 
-    abstract void setCodigoIdentificacion();
+    public float getPrecio(){
+        return precio;
+    }
 
-    abstract void setMarca();
+    public void setCodigoIdentificacion(String codigoIdentificacion){
+        this.codigoIdentificacion = codigoIdentificacion;
+    }
+
+    public String getCodigoIdentificacion(){
+        return codigoIdentificacion;
+    }
+
+    public void setMarca(String marca){
+        this.marca = marca;
+    }
+
+    public String getMarca(){
+        return marca;
+    }
 }
