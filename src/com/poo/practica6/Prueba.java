@@ -10,7 +10,6 @@ public class Prueba {
         /** Se crea al usuario y administrador involucrados en la prueba */
         Administradores admin = new Administradores("Juan",123);
         UsuarioNormal usuario = new UsuarioNormal();
-        System.out.println("Impresion de prueba");
 
         /** Simulación */
         usuario.RecorrerSupermercado();

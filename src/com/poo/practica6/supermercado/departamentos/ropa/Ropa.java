@@ -8,6 +8,13 @@ public abstract class Ropa extends Productos {
     private String genero;
     private String material;
 
+    public Ropa(String tamano, String color, String genero, String material) {
+        this.tamano = tamano;
+        this.color = color;
+        this.genero = genero;
+        this.material = material;
+    }
+
     public String getTamano() {
         return tamano;
     }
@@ -45,6 +52,12 @@ class Pantalon extends Ropa {
     private String tipo;
     private int numBolsillos;
 
+    public Pantalon(String tamano, String color, String genero, String material, String tipo, int numBolsillos) {
+        super(tamano, color, genero, material);
+        this.tipo = tipo;
+        this.numBolsillos = numBolsillos;
+    }
+
     public String getTipo() {
         return tipo;
     }
@@ -66,6 +79,13 @@ class Camisa extends Ropa {
     private int numBotones;
     private String diseno;
     private String tipocuello;
+
+    public Camisa(String tamano, String color, String genero, String material, int numBotones, String diseno, String tipocuello) {
+        super(tamano, color, genero, material);
+        this.numBotones = numBotones;
+        this.diseno = diseno;
+        this.tipocuello = tipocuello;
+    }
 
     public int getNumBotones() {
         return numBotones;
@@ -94,6 +114,11 @@ class Camisa extends Ropa {
 
 class Calcetines extends Ropa {
     private String dibujo;
+
+    public Calcetines(String tamano, String color, String genero, String material, String dibujo) {
+        super(tamano, color, genero, material);
+        this.dibujo = dibujo;
+    }
 
     public String getDibujo() {
         return dibujo;
