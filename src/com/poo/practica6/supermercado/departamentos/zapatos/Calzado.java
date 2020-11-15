@@ -1,13 +1,19 @@
 package com.poo.practica6.supermercado.departamentos.zapatos;
 
-import supermercado.departamentos.Productos;
+import com.poo.practica6.supermercado.departamentos.Productos;
 
+/**
+ * Clase abstracta del calzado, de la que se derivan tipos especificos
+ */
 public abstract class Calzado extends Productos {
     private int tamano;
     private String material;
     private String diseno;
     private String suela;
 
+    /**
+     * Getters y Setters
+     */
     public int getTamano() {
         return tamano;
     }
@@ -41,38 +47,7 @@ public abstract class Calzado extends Productos {
     }
 }
 
-class Sandalias extends Calzado {
-    private String tipoSandalia;
 
-    public String getTipoSandalia() {
-        return tipoSandalia;
-    }
 
-    public void setTipoSandalia(String tipoSandalia) {
-        this.tipoSandalia = tipoSandalia;
-    }
-}
 
-class Tenis extends Calzado {
-    private boolean agujetas;
 
-    public boolean isAgujetas() {
-        return agujetas;
-    }
-
-    public void setAgujetas(boolean agujetas) {
-        this.agujetas = agujetas;
-    }
-}
-
-class Tacones extends Calzado {
-    private int tamanoTacon;
-
-    public int getTamanoTacon() {
-        return tamanoTacon;
-    }
-
-    public void setTamanoTacon(int tamanoTacon) {
-        this.tamanoTacon = tamanoTacon;
-    }
-}

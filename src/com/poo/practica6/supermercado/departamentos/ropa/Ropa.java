@@ -1,13 +1,30 @@
 package com.poo.practica6.supermercado.departamentos.ropa;
 
-import supermercado.departamentos.Productos;
+import com.poo.practica6.supermercado.departamentos.Productos;
 
+/**
+ * La clase Ropa es una clase abstracta ya que no se puede tener un objeto tipo ropa, sin embargo, a partir de esta se
+ * derivan clases hijas que tienen en común todos los elementos de la ropa
+ */
 public abstract class Ropa extends Productos {
     private String tamano;
     private String color;
     private String genero;
     private String material;
 
+    /**
+     * Constructor a heredar
+     */
+    public Ropa(String tamano, String color, String genero, String material) {
+        this.tamano = tamano;
+        this.color = color;
+        this.genero = genero;
+        this.material = material;
+    }
+
+    /**
+     * Getters y Setters
+     */
     public String getTamano() {
         return tamano;
     }
@@ -41,65 +58,5 @@ public abstract class Ropa extends Productos {
     }
 }
 
-class Pantalon extends Ropa {
-    private String tipo;
-    private int numBolsillos;
 
-    public String getTipo() {
-        return tipo;
-    }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public int getNumBolsillos() {
-        return numBolsillos;
-    }
-
-    public void setNumBolsillos(int numBolsillos) {
-        this.numBolsillos = numBolsillos;
-    }
-}
-
-class Camisa extends Ropa {
-    private int numBotones;
-    private String diseno;
-    private String tipocuello;
-
-    public int getNumBotones() {
-        return numBotones;
-    }
-
-    public void setNumBotones(int numBotones) {
-        this.numBotones = numBotones;
-    }
-
-    public String getDiseno() {
-        return diseno;
-    }
-
-    public void setDiseno(String diseno) {
-        this.diseno = diseno;
-    }
-
-    public String getTipocuello() {
-        return tipocuello;
-    }
-
-    public void setTipocuello(String tipocuello) {
-        this.tipocuello = tipocuello;
-    }
-}
-
-class Calcetines extends Ropa {
-    private String dibujo;
-
-    public String getDibujo() {
-        return dibujo;
-    }
-
-    public void setDibujo(String dibujo) {
-        this.dibujo = dibujo;
-    }
-}

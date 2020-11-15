@@ -3,17 +3,13 @@ package com.poo.practica6.formas_de_entrega;
 import java.util.Scanner;
 
 public class Direccion {
-    /**
-     * Atributos
-     */
+    /** Atributos */
     private long telefono;
     private String calle;
     private String colonia;
     private int numeroPostal;
 
-    /**
-     * Metodo Constructor
-     */
+    /** Método Constructor */
     public Direccion() {
         try (Scanner teclado = new Scanner(System.in)) {
             System.out.print("Direccion\n   Calle: ");
@@ -27,17 +23,13 @@ public class Direccion {
         }
     }
 
-    /**
-     * Metodo Impresion Datos
-     */
+    /**  Método Impresion Datos */
     public String ImprimirDireccion() {
         String Impresion = "\n   Calle: " + this.getCalle() + "\n   Colonia: " + this.getColonia() + "\n   Codigo Postal: " + this.getNumeroPostal() + "\n   Numero Telefonico: " + this.getNumeroTelefonico();
         return Impresion;
     }
 
-    /**
-     * Getters
-     */
+    /** Getters */
     public String getCalle() {
         return calle;
     }
